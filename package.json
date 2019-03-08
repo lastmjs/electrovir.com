@@ -1,13 +1,15 @@
 {
-  "name": "electrovir.com",
-  "main": "index.html",
-  "dependencies": {
-    "zwitterion": "^0.29.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "zwitterion --build-static"
-  },
-  "author": "electrovir"
+    "name": "electrovir.com",
+    "main": "index.html",
+    "dependencies": {
+        "lit-html": "^1.0.0",
+        "zwitterion": "^0.29.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "zwitterion --build-static",
+        "start": "zwitterion -p 8000"
+    },
+    "author": "electrovir"
 }

@@ -1,6 +1,10 @@
+import { html, render } from 'lit-html';
+
 class ElectrovirApp extends HTMLElement {
     connectedCallback() {
         console.log('The app has been connected!');
+
+        render(this.render(), this);
     }
 
     render() {
