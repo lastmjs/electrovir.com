@@ -1,15 +1,26 @@
 import { html, render } from 'lit-html';
+import './vir-page-thumb-link';
 
 class ElectrovirApp extends HTMLElement {
-    connectedCallback() {
+    public thing: string = 'hello person';
+
+    public connectedCallback() {
         console.log('The app has been connected!');
 
         render(this.render(), this);
     }
 
-    render() {
+    public handleThumbClick() {
+        console.log('clicked thing!');
+        this.thing = 'I\'ve been clicked!';
+        console.log(this.thing);
+        this.render();
+    }
+
+    public render() {
         return html`
             yo I heard you like custom elements
+            <vir-page-thumb-link .directory=${this.thing} @click=${this.handleThumbClick}>uh?</vir-page-thumb-link>
         `;
     }
 
