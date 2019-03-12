@@ -10,7 +10,8 @@ class VirPageThumbLink extends HTMLElement {
     }
 
     public attributeChangedCallback() {
-        this.render();
+        console.log('changed?', arguments);
+        render(this.render(), this);
     }
 
     public render() {

@@ -14,7 +14,7 @@ class ElectrovirApp extends HTMLElement {
         console.log('clicked thing!');
         this.thing = 'I\'ve been clicked!';
         console.log(this.thing);
-        this.render();
+        render(this.render(), this);
     }
 
     public render() {
