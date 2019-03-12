@@ -13,8 +13,7 @@ class ElectrovirApp extends HTMLElement {
     public handleThumbClick() {
         console.log('clicked thing!');
         this.thing = 'I\'ve been clicked!';
-        console.log(this.thing);
-        render(this.render(), this);
+        console.log(`${this.thing}`);
     }
 
     public render() {
